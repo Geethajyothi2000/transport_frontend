@@ -6,12 +6,8 @@ import EmpList from "../components/EmpList";
 const EmployeeReport  = () => {
   const navigate = useNavigate();
   const [employeeData, setData] = useState([]);
-  var mtotalsalary = 0;
-  var ytotalsalary = 0;
-  var totalEmployess = 0;
-  var tax = 0 ;
-  var insurance = 0;
-  var hra = 0;
+  var yearnings  = 0;
+
 
 
   useEffect(() => {
@@ -29,9 +25,9 @@ const EmployeeReport  = () => {
     <>
       <center>
         <h3 className="he">
-          Report of Annual Emplloyee expenses of XYZ PVT Ltd
+        Emplloyee Report of XYZ PVT Ltd
         </h3>
-        <button
+        <button className="btn"
           onClick={() => {
             navigate("/EmpaddData");
           }}
@@ -45,12 +41,12 @@ const EmployeeReport  = () => {
           <div> en </div>
           <div> ename </div>
           <div> mearnings </div>
-          <div>yeanings</div>
+          <div>yearnings</div>
           <div>type</div>
           
         </div>
         {employeeData.map((employee) => {
-      
+       
 
           return (
             <EmpList
@@ -59,7 +55,7 @@ const EmployeeReport  = () => {
               en={employee.en}
               ename={employee.ename}
               mearnings={employee.mearnings}
-             yeanings={employee.yeanings}
+              yearnings={employee.yearnings}
              type = {employee.type}
             />
           );
@@ -68,9 +64,9 @@ const EmployeeReport  = () => {
       
         </div>
       </div>
-      <button
+      <button className="btn"
         onClick={() => {
-            navigate("/");
+            navigate("/Report");
         }}
         >GO BACK</button>
     </>

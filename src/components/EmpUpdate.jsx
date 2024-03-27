@@ -31,7 +31,7 @@ const EmpUpdate = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         try {
-            axios.post("http://localhost:3001/Update1", {id,en,en,ename,mearnings,yearnings,type})
+            axios.post("http://localhost:3001/Update1", {id,en,ename,mearnings,yearnings,type})
                 .then((response) => {
                     console.log(response);
                     navigate("/")
@@ -58,4 +58,4 @@ const EmpUpdate = () => {
     )
 }
 
-export default EmpUpdate
+export default EmpUpdate;

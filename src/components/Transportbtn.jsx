@@ -20,7 +20,7 @@ const Transportbtn = () => {
 
 
   return (
-    <>
+    <div>
       <button  className="btn"
           onClick={() => {
             navigate("/Aboutus");
@@ -55,10 +55,11 @@ const Transportbtn = () => {
           Contacts
         </button>
 
+{/* <img  src="https://wallpaperaccess.com/full/656670.jpg" height="600" width="1520"></img> */}
         {/* <button onClick={updateAllData}>Update Records</button> */}
 
     
-    </>
+    </div>
   );
 };
 

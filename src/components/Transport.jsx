@@ -80,7 +80,7 @@ var v_total = 0;
         </div>
       </div>
 
-      <button
+      <button className="btn"
         onClick={() => {
             navigate("/Report");
         }}

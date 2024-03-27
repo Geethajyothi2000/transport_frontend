@@ -22,16 +22,16 @@ const Report = () => {
   return (
     <>
 
-        <button
+        <button  className="btn"
           onClick={() => {
             navigate("/Transport");
           }}
         >
-         Transport
+    TurnOver
         </button>
 
 
-        <button
+        <button className="btn"
           onClick={() => {
             navigate("/EmployeeReport");
           }}
@@ -39,17 +39,17 @@ const Report = () => {
       Employereport
         </button>
 
-        <button
+        <button className="btn"
           onClick={() => {
-            navigate("/Vehicles");
+            navigate("/VehicleReport");
           }}
         >
-       Vehicles
+     VehicleReport
         </button>
 
         
 
-        <button
+        <button className="btn"
           onClick={() => {
             navigate("/");
           }}

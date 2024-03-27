@@ -8,7 +8,13 @@ import Aboutus from './components/Aboutus'
 import Contacts from './components/Contacts'
 import Vehicles from './components/Vehicles'
 import AddData from './components/AddData'
-// import EmployeReport from './components/EmployeReport'
+import EmployeeReport from './components/EmployeeReport'
+import EmpaddData from './components/EmpaddData'
+import EmpUpdate from './components/EmpUpdate'
+import VaddData from './components/VaddData'
+import Vupdate from './components/Vupdate'
+import VehicleReport from './components/VehicleReport'
+
 
 
 const App = () => {
@@ -25,6 +31,13 @@ const App = () => {
     <Route path= "/Contacts" element={ <Contacts />} />
     <Route path= "/Vehicles" element={ <Vehicles />} />
 
+    <Route path= "/EmployeeReport" element={ <EmployeeReport />} />
+    <Route path= "/EmpaddData" element={ <EmpaddData/>} />
+    <Route path= "/EmpUpdate/:id" element={ <EmpUpdate />} />
+
+    <Route path= "/VehicleReport" element={ <VehicleReport />} />
+    <Route path= "/VaddData" element={ <VaddData/>} />
+    <Route path= "/Vupdate/:id" element={ <Vupdate/>} />
     
 </Routes>
     </BrowserRouter>
